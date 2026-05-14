@@ -1,3 +1,4 @@
+import { useState, useEffect, useCallback } from 'react'
 import './App.css'
 
 const characters = [
@@ -111,6 +112,29 @@ const worldImages = [
 ];
 
 function App() {
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null)
+
+  const closeLightbox = useCallback(() => {
+    setLightboxImage(null)
+    document.body.style.overflow = 'auto'
+  }, [])
+
+  const openLightbox = (imageSrc: string) => {
+    setLightboxImage(imageSrc)
+    document.body.style.overflow = 'hidden'
+  }
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && lightboxImage) {
+        closeLightbox()
+      }
+    }
+    
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [lightboxImage, closeLightbox])
+
   return (
     <div className="movie-page">
       {/* Hero Section */}
@@ -219,7 +243,7 @@ function App() {
 
       {/* Characters Section */}
       <section className="characters-section">
-        <h2 className="section-title spaced">T H E &nbsp; C H A R A C T E R S</h2>
+        <h2 className="section-title spaced white">The Characters</h2>
         
         {characters.map((character, index) => (
           <div 
@@ -255,7 +279,7 @@ function App() {
 
       {/* Their World Section */}
       <section className="world-section">
-        <h2 className="section-title spaced">T H E I R &nbsp; W O R L D</h2>
+        <h2 className="section-title spaced">Their Other World</h2>
         <div className="world-intro">
           <h3>Blue's Room</h3>
           <p>
@@ -268,12 +292,42 @@ function App() {
         </div>
         <div className="world-gallery">
           {worldImages.map((img, index) => (
-            <div key={index} className="world-image">
+            <div 
+              key={index} 
+              className="world-image"
+              onClick={() => openLightbox(img)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => e.key === 'Enter' && openLightbox(img)}
+            >
               <img src={img} alt={`Blue's Room - View ${index + 1}`} />
             </div>
           ))}
         </div>
       </section>
+
+      {/* Image Lightbox */}
+      {lightboxImage && (
+        <div 
+          className="lightbox-overlay" 
+          onClick={closeLightbox}
+          role="dialog"
+          aria-modal="true"
+        >
+          <button 
+            className="lightbox-close" 
+            onClick={closeLightbox}
+            aria-label="Close lightbox"
+          >
+            ×
+          </button>
+          <img 
+            src={lightboxImage} 
+            alt="Expanded view" 
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
 
       {/* Footer */}
       <footer className="movie-footer">

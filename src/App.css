@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(180deg, #0d0d15 0%, #1a1a2e 50%, #16213e 100%);
+  background: linear-gradient(180deg, #000000 0%, #0a0a0a 30%, #0d0d0d 60%, #111111 100%);
   position: relative;
   padding: 60px 20px;
 }
@@ -27,8 +27,9 @@
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(ellipse at 20% 30%, rgba(138, 43, 226, 0.15) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 70%, rgba(255, 165, 0, 0.1) 0%, transparent 50%);
+    radial-gradient(ellipse at 30% 20%, rgba(20, 20, 25, 0.8) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 80%, rgba(15, 15, 20, 0.6) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(25, 25, 30, 0.4) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -41,15 +42,31 @@
 .movie-title {
   font-family: 'Cinzel', serif;
   font-size: clamp(3rem, 10vw, 7rem);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: #d4af37;
   text-shadow: 
-    0 0 40px rgba(212, 175, 55, 0.5),
-    0 4px 20px rgba(0, 0, 0, 0.5);
+    /* 3D extrusion effect - layered shadows */
+    1px 1px 0 #b8962e,
+    2px 2px 0 #a6872a,
+    3px 3px 0 #947826,
+    4px 4px 0 #826922,
+    5px 5px 0 #705a1e,
+    6px 6px 0 #5e4b1a,
+    /* Soft glow underneath */
+    0 8px 20px rgba(0, 0, 0, 0.6),
+    /* Golden ambient glow */
+    0 0 60px rgba(212, 175, 55, 0.3),
+    0 0 100px rgba(212, 175, 55, 0.15);
   margin: 0 0 40px;
   line-height: 1.1;
+  /* Subtle bevel effect */
+  background: linear-gradient(180deg, #f0d978 0%, #d4af37 40%, #b8962e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 30px rgba(212, 175, 55, 0.4));
 }
 
 .logline {
@@ -161,8 +178,12 @@
 }
 
 .section-title.spaced {
-  letter-spacing: 0.3em;
+  letter-spacing: 0.15em;
   margin-bottom: 60px;
+}
+
+.section-title.white {
+  color: #ffffff;
 }
 
 /* Poster Section */
@@ -397,17 +418,21 @@
   margin: 0 auto;
 }
 
+.world-image {
+  cursor: pointer;
+}
+
 .world-image img {
   width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
 }
 
-.world-image img:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+.world-image:hover img {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
 }
 
 /* Footer */
@@ -433,6 +458,61 @@
   margin: 0;
 }
 
+/* Image Lightbox/Modal */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  cursor: pointer;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.lightbox-overlay img {
+  max-width: 95%;
+  max-height: 95vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  cursor: default;
+  animation: scaleIn 0.3s ease;
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  background: none;
+  border: none;
+  line-height: 1;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.lightbox-close:hover {
+  color: #d4af37;
+  transform: scale(1.1);
+}
+
 /* General Responsive */
 @media (max-width: 600px) {
   .hero-section {
@@ -454,6 +534,29 @@
 
   .world-gallery {
     grid-template-columns: 1fr;
+  }
+
+  /* Fix mobile text spacing */
+  .section-title.spaced {
+    letter-spacing: 0.05em;
+    word-spacing: normal;
+  }
+
+  .movie-title {
+    letter-spacing: 0.08em;
+  }
+
+  .logline {
+    padding: 0 10px;
+  }
+
+  .summary-content p,
+  .synopsis-content p {
+    padding: 0 5px;
+  }
+
+  .world-intro h3 {
+    letter-spacing: 0.02em;
   }
 }
 
