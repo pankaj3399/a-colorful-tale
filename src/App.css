@@ -39,34 +39,12 @@
   max-width: 900px;
 }
 
-.movie-title {
-  font-family: 'Cinzel', serif;
-  font-size: clamp(3rem, 10vw, 7rem);
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: #d4af37;
-  text-shadow: 
-    /* 3D extrusion effect - layered shadows */
-    1px 1px 0 #b8962e,
-    2px 2px 0 #a6872a,
-    3px 3px 0 #947826,
-    4px 4px 0 #826922,
-    5px 5px 0 #705a1e,
-    6px 6px 0 #5e4b1a,
-    /* Soft glow underneath */
-    0 8px 20px rgba(0, 0, 0, 0.6),
-    /* Golden ambient glow */
-    0 0 60px rgba(212, 175, 55, 0.3),
-    0 0 100px rgba(212, 175, 55, 0.15);
+.movie-title-image {
+  max-width: clamp(300px, 80vw, 700px);
+  width: 100%;
+  height: auto;
   margin: 0 0 40px;
-  line-height: 1.1;
-  /* Subtle bevel effect */
-  background: linear-gradient(180deg, #f0d978 0%, #d4af37 40%, #b8962e 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 30px rgba(212, 175, 55, 0.4));
+  filter: drop-shadow(0 0 40px rgba(212, 175, 55, 0.4)) drop-shadow(0 10px 30px rgba(0, 0, 0, 0.6));
 }
 
 .logline {
@@ -337,20 +315,39 @@
 
 .character-extra-images {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.extra-image-wrapper {
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.extra-image-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.extra-image-wrapper:focus {
+  outline: 2px solid #d4af37;
+  outline-offset: 2px;
 }
 
 .character-extra-images img {
-  width: 200px;
+  width: 150px;
   height: auto;
+  display: block;
   border-radius: 8px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s;
+  transition: opacity 0.3s;
 }
 
-.character-extra-images img:hover {
-  transform: scale(1.05);
+.extra-image-wrapper:hover img {
+  opacity: 0.9;
 }
 
 /* Responsive Characters */
@@ -542,8 +539,8 @@
     word-spacing: normal;
   }
 
-  .movie-title {
-    letter-spacing: 0.08em;
+  .movie-title-image {
+    max-width: 85vw;
   }
 
   .logline {

@@ -4,8 +4,15 @@ import './App.css'
 const characters = [
   {
     name: "Blue",
-    mainImage: "/images/BLUE_WITH_HIS_GUITAR-14d78a96-560e-4c3f-a529-9e79d80c7f13.png",
-    extraImages: [],
+    mainImage: "/images/BLUE_OFFICIAL_POSTER-bc7d7a8e-3718-4f8e-956a-ae69a2fe06af.png",
+    extraImages: [
+      "/images/BLUE_HAND_DRAWN_COLORED-c2e04d89-4941-4431-88ac-572d7e3bed7f.png",
+      "/images/_BLUE_HAND-DRAWN_COLORED___2-57e5a8f9-152a-4794-8ba9-11dae436b938.png",
+      "/images/BLUE_HAND-DRAWN_COLORED___3-9ec015aa-61ae-4bed-8d79-0fb90008565c.png",
+      "/images/BLUE_HAND-DRAWN_COLORED___4_COLLAGE-0522d6a9-0ad6-43e9-bb69-c4f250b485d6.png",
+      "/images/BLUE_CHARCOAL_SKETCHES___1_-f2298232-aa33-439f-ab87-5f9be568ce19.png",
+      "/images/BLUE_CHARCOAL_SKETCHES___2_-866fdb8a-c4a6-43bf-a728-af91dfc4b422.png"
+    ],
     form: "Human teenage boy (14 years old, Caucasian)",
     accent: "American",
     skills: "Guitar, songwriting, sketching. Expresses himself deeply through music and written words.",
@@ -14,7 +21,14 @@ const characters = [
   {
     name: "Paper",
     mainImage: "/images/PAPER_MOVIE_POSTER-ab168a0c-6186-4944-8fd8-d90b86973b63.png",
-    extraImages: ["/images/PAPER_copy-18bf1cb9-273e-4b16-980f-8ca4b61b9198.png"],
+    extraImages: [
+      "/images/PAPER_CHARCOAL_SKETCHES__COLLAGE___5-66b7ec53-79e7-4412-b26b-2f8fce8aa912.png",
+      "/images/PAPER_CHARCOAL_SKETCHES__COLLAGE___4_-67dcad70-24d3-464c-b439-36bc02f01862.png",
+      "/images/PAPER_CHARCOAL_SKETCHES__COLLAGE___3-88a72b36-fd05-46b8-98bb-f6f56ebdedc1.png",
+      "/images/PAPER_CHARCOAL__COLLAGE___2-a6b6d400-52d4-46aa-8683-97800ac6cab4.png",
+      "/images/PAPER_CHARCOAL_SKETCH___1-5567d08f-dd5e-4ceb-ac69-34b4fda5a96d.png",
+      "/images/PAPER_CHARCOAL___3-a8e597fc-3da6-48ce-8b5f-51b6731b3de1.png"
+    ],
     form: "White sheet of paper (female, Caucasian American)",
     accent: "American",
     skills: "Master of origami—can fold herself into any shape, object, or form.",
@@ -23,7 +37,16 @@ const characters = [
   {
     name: "Zhu",
     mainImage: "/images/ZHU_MOVIE_POSTER__THE_CORRECT_ONE__-f2da3672-0848-4952-a185-1f891791fd1c.png",
-    extraImages: ["/images/ZHU-5b5bd017-979d-4a73-bf1a-e727c804487f.png"],
+    extraImages: [
+      "/images/ZHU_CHARCOAL_SKETCH___5-5f16e60d-219f-498d-88ec-dd53563992de.png",
+      "/images/ZHU_CHARCOAL_SKETCH___2-9aa83d6a-41b4-48f7-8c4a-3bebfc7291ae.png",
+      "/images/ZHU_CHARCOAL_SKETCH___4-ac41ba32-8fa3-4b56-9fd9-fcdd1eae61d8.png",
+      "/images/ZHU_COLORED_PENCIL___1-c4da2d1a-5c6a-4ccc-b43e-5b95638620b3.png",
+      "/images/ZHU_CHARCOAL_SKETCH___1_-5d2196f3-e2b9-4a1d-a012-14e5206c89dc.png",
+      "/images/ZHU_CHARCOAL_SKETCHES___4_-994e2aa1-b85f-4c8a-be7a-fc42f028d20d.png",
+      "/images/ZHU_CHARCOAL_SKETCH___3_-b765f38d-d808-4e13-8e9b-ac5418162af2.png",
+      "/images/ZHU_COLORED_PENCIL___2_-e77779ed-8d32-42f3-bead-3d3002c23fc7.png"
+    ],
     form: "Yellow bamboo stalk (Female, Chinese martial artist)",
     accent: "Mandarin",
     skills: "Graceful martial arts movements; uses her flexible leaves/fingers for violin or cymbal-like sounds.",
@@ -32,7 +55,15 @@ const characters = [
   {
     name: "Royal B.",
     mainImage: "/images/ROYAL_B._MOVIE_POSTER-bf962cc7-8c5f-4739-99d0-29c878bba36a.png",
-    extraImages: ["/images/ROYAL_B.-58aacc17-4203-4567-9cbf-59993e2c010e.png"],
+    extraImages: [
+      "/images/ROYAL_B._CHARCOAL_SKETCH_COLLAGE___2_-9a52429c-ae59-4ffe-8d4a-ab676904eedd.png",
+      "/images/ROYAL_B._CHARCOAL_SKETCH_COLLAGE___3_-61210a51-53e7-4bf0-985f-0864dd2529af.png",
+      "/images/ROYAL_B._CHARCOAL_SKETCH_COLLAGE___1_-31710163-1065-42a0-aedc-dac56f9f1888.png",
+      "/images/ROYAL_B._CHARCOAL_SKETCH_COLLAGE_-aa64c5f0-5dd4-45b6-a215-8a1a843d9012.png",
+      "/images/ROYAL_B._COLORED_PENCIL_COLLAGE-104be3f8-5ef4-4da6-9361-dd6c3a5eeb00.png",
+      "/images/ROYAL_B._COLORED_CHARCOAL___1__CORRECT_VERSION__-223f77d7-c970-4cf3-b6f1-0179eef573c2.png",
+      "/images/ROYAL_B._CHARCOAL___1_-ea6496ee-4a14-4ede-a07a-7235f5800e87.png"
+    ],
     form: "British Royal Toy Guard (Caucasian male)",
     accent: "British",
     skills: "Uses boot stomps and button jingles for percussion.",
@@ -41,7 +72,15 @@ const characters = [
   {
     name: "Clover The Third",
     mainImage: "/images/CLOVER_THE_THIRD_MOVIE_POSTER-ce7ab2ee-d7d7-4949-914a-678c3b76d536.png",
-    extraImages: ["/images/CLOVER_THE_THIRD-ee6b7bc4-05fc-4aae-8659-9e63d48cf263.png"],
+    extraImages: [
+      "/images/CLOVER_THE_THIRD_CHARCOAL_TRANSFORMATION__CORRECT_1__-10f8c680-857f-4327-8cbb-c98e5858cf2c.png",
+      "/images/CLOVER_THE_THIRD_CHARCOAL_SKETCH_COLLAGE___2_-f025e589-8969-48ac-8e5a-e76092191560.png",
+      "/images/CLOVER_THE_THIRD_CHARCOAL_SKETCH_-55575633-2e0f-4691-b497-ae58e8fe112b.png",
+      "/images/CLOVER_THE_THIRD_CHARCOAL_SKETCH___3_-5afbf527-3210-4bd2-a872-846a027baca0.png",
+      "/images/CLOVER_THE_THIRD_CHARCOAL_SKETCH_COLLAGE___1_-4bee0a7d-559d-492d-8267-b2b04c18c967.png",
+      "/images/CLOVER_THE_THIRD_CHARCOAL_SKETCH___2_-3006e83c-7085-4145-8361-978bde93ea80.png",
+      "/images/CLOVER_THE_THIRD_COLORED_PENCIL_-1bbb5262-1969-47bc-b277-7034e16050f0.png"
+    ],
     form: "Grass blade turned shamrock (Irish female)",
     accent: "Irish",
     skills: "Plays Blue's guitar with elegance and instinct.",
@@ -50,7 +89,14 @@ const characters = [
   {
     name: "Noodle",
     mainImage: "/images/NOODLE_IN_MOTION_MOVIE_POSTER-cd635b0d-f504-4073-960c-230dd9f335cb.png",
-    extraImages: ["/images/NOODLE-b0ed5502-8258-4121-8968-0f90fa85738f.png"],
+    extraImages: [
+      "/images/NOODLE_CHARCOAL_SKETCHES_--_THE_ITALIAN_IN_HIM-9ce781a6-6039-4806-a0a7-e4335701defd.png",
+      "/images/NOODLE_CHARCOAL_SKETCHES_COLLAGE___1_-a3d62650-c106-41c4-8736-c6a6c45b4500.png",
+      "/images/NOODLE_CHARCOAL_SKETCH_COLLAGE___2-571658ea-89fb-4d91-a4b5-c687ad4945fa.png",
+      "/images/NOODLE_CHARCOAL_HERO_CORRECT_SHOT_-81ab57e4-7da3-42d3-9f83-c9423b3b4216.png",
+      "/images/NOODLE_CHARCOAL___1-c00d3088-288d-442d-adc1-867fe19e3ef0.png",
+      "/images/NOODLE_CHARCOAL_SKETHES_COLLAGE___2_-c6f14e38-23bd-4d84-8e39-4550fc39dfd7.png"
+    ],
     form: "Fettuccine noodle (Italian-American male)",
     accent: "New York",
     skills: "Slaps surfaces like piano keys; expert at turning objects into rhythmic instruments.",
@@ -59,7 +105,14 @@ const characters = [
   {
     name: "Ink",
     mainImage: "/images/INK_MOVIE_POSTER-d4c5d5a4-e1af-4f7f-bc0d-6c425bbfbb66.png",
-    extraImages: ["/images/INK-152714e1-ca80-4573-80ea-6f508a150f31.png"],
+    extraImages: [
+      "/images/INK_CHARCOAL_SKETCHES_COLLAGE___4_-508ed7e4-a655-4a61-bd29-304de00bfb54.png",
+      "/images/INK_CHARCOAL_SKETCH_COLLAGE___1-ea3a81f4-b3cd-4ac6-a62e-d9842cc52d51.png",
+      "/images/INK_CHARCOAL_COLLAGE_SKETCHES___3_-23245f0a-54e3-4407-b743-a333b1628dd6.png",
+      "/images/INK_CHARCOAL_SKETCH___2_-ad3426dd-f70f-4b78-898d-7adb9f5c658d.png",
+      "/images/INK_CHARCOAL_SKETCH___1_-ed2f4f42-a024-400b-bd9d-3333ed54880d.png",
+      "/images/INK_CHARCOAL_SKETCH___3-1676a8b2-3e39-4660-b011-89de1a980ebf.png"
+    ],
     form: "Black ink (African-American male)",
     accent: "American",
     skills: "Mimics brass instruments with his mouth; fluid in form and sound.",
@@ -68,7 +121,15 @@ const characters = [
   {
     name: "Ndee",
     mainImage: "/images/NDEE_MOVIE_POSTER_-b01b9c2a-9bfd-4837-93ab-065a59d01ba1.png",
-    extraImages: ["/images/THIS_IS_NDEE_copy-23828a9c-0e77-450c-aac0-5add89158a88.png"],
+    extraImages: [
+      "/images/NDEE_ROUGH_CHARCOAL_SKETCH___2_-794710b0-c02b-43a1-9cd1-b168ab74db28.png",
+      "/images/NDEE_ROUGH_CHARCOAL_SKETCH___1-b14bc53f-f28d-4a06-ad36-04201eed37a7.png",
+      "/images/NDEE__THE_PERFECT_CHARCOAL_HERO_SHOT-edec7c33-5d77-4496-8b0b-774323d813d5.png",
+      "/images/NDEE__CHARCOAL_SKETCH_POSTER_POSE-825d5f1c-5b14-4c5e-81f7-1c9cf8b682c1.png",
+      "/images/NDEE_ROUGH_CHARCOAL_SKETCH___3_-b3f1b42e-d615-4c0a-8302-bcc091701bdb.png",
+      "/images/NDEE_CLEANEST_CHARCOAL_SKETCH-afe56812-b335-4ff7-a209-40543f8da44c.png",
+      "/images/NDEE_ROUGH_CHARCOAL_SKETCH___4_-0428a05e-5203-4dec-b105-30541a539ac0.png"
+    ],
     form: "Pebble (Native American male)",
     accent: "American",
     skills: "Produces deep bass tones through movement; serves as the group's sonic foundation.",
@@ -95,7 +156,15 @@ const characters = [
   {
     name: "Thwrt",
     mainImage: "/images/THWRT_OFFICIAL_MOVIE_POSTER-4e7c8fa8-96fd-4719-a314-1d375c9895b7.png",
-    extraImages: ["/images/THWRT_2_-5a94fe39-a4e5-494f-b3dc-7c3b72dd4be4.png"],
+    extraImages: [
+      "/images/THRWT_CHARCOAL_SKETCHES_COLLAGE___4_-a720e383-f15d-4b59-8204-212e3aac36ce.png",
+      "/images/THRWT_CHARCOAL_SKETCHES_COLLAGE___2_-11149654-d77a-462b-9040-0501cc366c7a.png",
+      "/images/THWRT_CHARCOAL_SKETCH___2_-51ef7987-6195-44e1-8203-ed1420a40b53.png",
+      "/images/THWRT_CHARCOAL_SKETCH___3_-e40041d4-f699-43d7-b41f-fed3d3e6577c.png",
+      "/images/THRWT_CHARCOAL_SKETCHES_COLLAGE___5-061f75de-460b-4fdd-9797-1f35e24143fe.png",
+      "/images/THRWT_NEW_MOUND_CHARCOAL_SKETCH_-56762594-9fa1-452e-89c4-4519fd82570c.png",
+      "/images/THWRT_PURPLE_CHARCOAL___1_-2ebc605a-3e45-4973-a2cd-e1e340923f3c.png"
+    ],
     form: "Being of living sand. Each grain is an eye. (Arabic male, shapeshifter)",
     accent: "Arabic",
     skills: "Can reshape into any form or pattern; creates rustling, shaker-like sounds.",
@@ -140,7 +209,11 @@ function App() {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
-          <h1 className="movie-title">A Colorful Tale</h1>
+          <img 
+            src="/images/title.png" 
+            alt="A Colorful Tale" 
+            className="movie-title-image"
+          />
           <p className="logline">
             When a grieving boy shuts the world out, forgotten keepsakes find their
             voice through chaotic harmony—to help him feel again.
@@ -264,11 +337,19 @@ function App() {
               {character.extraImages.length > 0 && (
                 <div className="character-extra-images">
                   {character.extraImages.map((img, imgIndex) => (
-                    <img 
-                      key={imgIndex} 
-                      src={img} 
-                      alt={`${character.name} additional`} 
-                    />
+                    <div
+                      key={imgIndex}
+                      className="extra-image-wrapper"
+                      onClick={() => openLightbox(img)}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(e) => e.key === 'Enter' && openLightbox(img)}
+                    >
+                      <img 
+                        src={img} 
+                        alt={`${character.name} additional ${imgIndex + 1}`} 
+                      />
+                    </div>
                   ))}
                 </div>
               )}
