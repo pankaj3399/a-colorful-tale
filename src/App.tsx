@@ -137,8 +137,16 @@ const characters = [
   },
   {
     name: "Rasta",
-    mainImage: "/images/RASTA_MOVIE_POSTER-3517dbc5-e00b-47c9-a48a-a42f8fde64ad.png",
-    extraImages: ["/images/RASTA_copy-c83de4cf-5e48-4fda-8db3-6a68d5bb5acc.png"],
+    mainImage: "/images/NEW_UPDATED_RASTA_OFFICIAL_POSTER-22b99aba-0d21-4c9e-861b-e9b9bf5050ea.png",
+    extraImages: [
+      "/images/RASTA_CHARCOAL_OFFICIAL_HERO_SHOT-a563d715-39c3-441c-a4d0-a7fc571ccf98.png",
+      "/images/RASTA_CHARCOAL_2_POSES_OFFICIAL_PIX_-2d5aefb9-c619-4f13-9038-130e52b5ce3f.png",
+      "/images/RASTA_CHARCOAL_4_POSES_-8562eb0b-34fa-46ff-bc53-d9ffda0d1df2.png",
+      "/images/RASTA_CHARCOAL_8_POSES-6a4cbeab-1ee7-459f-9db7-2bdfabf923a1.png",
+      "/images/RASTA_CHARCOAL_ROUGH_EXPLORATION___1-e9595578-7c02-4c81-a2fd-6a0e1457b249.png",
+      "/images/RASTA_CHARCOAL_SKETCHES___5_-8728431c-6d64-4b8d-8ddf-54ab279a3e58.png",
+      "/images/RASTA_CHARCOAL_SKETCHES___6_-86f3753c-add8-4b52-b3f5-0fbca6be6b8a.png"
+    ],
     form: "Wooden stick (Black Caribbean male)",
     accent: "Jamaican",
     skills: "Taps boxes and surfaces to create drum rhythms; master of percussive steadiness.",
