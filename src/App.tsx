@@ -248,11 +248,13 @@ function App() {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
-          <img 
-            src="/images/title.png" 
-            alt="A Colorful Tale" 
-            className="movie-title-image"
-          />
+          <div className="title-image-wrap">
+            <img
+              src="/images/title.png"
+              alt="A Colorful Tale"
+              className="movie-title-image"
+            />
+          </div>
           <p className="logline">
             When a grieving boy shuts the world out, forgotten keepsakes find their
             voice through chaotic harmony—to help him feel again.

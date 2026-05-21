@@ -7,9 +7,10 @@
   color: #ffffff;
 }
 
-/* Hero Section */
+/* Hero Section — full-screen black; title image uses screen blend so only gold + particles show */
 .hero-section {
-  min-height: 100vh;
+  min-height: 100svh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,20 +18,29 @@
   background: #000000;
   position: relative;
   padding: 60px 20px;
+  overflow: hidden;
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
   max-width: 900px;
+  width: 100%;
+}
+
+.title-image-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 40px;
 }
 
 .movie-title-image {
   max-width: clamp(300px, 80vw, 700px);
   width: 100%;
   height: auto;
-  margin: 0 0 40px;
-  filter: drop-shadow(0 0 40px rgba(212, 175, 55, 0.4)) drop-shadow(0 10px 30px rgba(0, 0, 0, 0.6));
+  display: block;
+  /* Black in the JPEG becomes invisible over #000; keeps golden title + particles */
+  mix-blend-mode: screen;
 }
 
 .logline {
@@ -550,8 +560,8 @@
 /* General Responsive */
 @media (max-width: 600px) {
   .hero-section {
-    min-height: auto;
-    padding: 100px 20px;
+    min-height: 100svh;
+    padding: 80px 20px;
   }
 
   .summary-section,
