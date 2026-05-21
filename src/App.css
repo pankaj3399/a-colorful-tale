@@ -313,6 +313,57 @@
   margin-bottom: 30px;
 }
 
+/* Character Song Section */
+.character-song {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  padding: 25px;
+  background: rgba(212, 175, 55, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  text-align: center;
+}
+
+.song-tagline {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 8px;
+}
+
+.song-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #d4af37;
+  margin: 0 0 20px;
+  letter-spacing: 0.03em;
+}
+
+.song-player {
+  width: 100%;
+  max-width: 400px;
+  height: 45px;
+  border-radius: 25px;
+  outline: none;
+}
+
+.song-player::-webkit-media-controls-panel {
+  background: rgba(30, 30, 35, 0.9);
+}
+
+.song-player::-webkit-media-controls-current-time-display,
+.song-player::-webkit-media-controls-time-remaining-display {
+  color: #d4af37;
+}
+
+@media (max-width: 900px) {
+  .character-song {
+    text-align: center;
+  }
+}
+
 .character-extra-images {
   display: flex;
   gap: 15px;

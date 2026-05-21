@@ -67,7 +67,12 @@ const characters = [
     form: "British Royal Toy Guard (Caucasian male)",
     accent: "British",
     skills: "Uses boot stomps and button jingles for percussion.",
-    personality: "Rigid, formal, rule-bound—yet sensitive. Prideful and proper. Tension brews when duty collides with emotion. His dignity is armor; his unspoken battlefield, emotion. Beneath it all, a quiet longing to matter."
+    personality: "Rigid, formal, rule-bound—yet sensitive. Prideful and proper. Tension brews when duty collides with emotion. His dignity is armor; his unspoken battlefield, emotion. Beneath it all, a quiet longing to matter.",
+    song: {
+      tagline: "His song, his voice, his band.",
+      title: "I'd Never Be Like",
+      audioFile: "/audio/NBL - 2026 V1 MST1 2.m4a"
+    }
   },
   {
     name: "Clover The Third",
@@ -84,7 +89,12 @@ const characters = [
     form: "Grass blade turned shamrock (Irish female)",
     accent: "Irish",
     skills: "Plays Blue's guitar with elegance and instinct.",
-    personality: "Romantic, expressive, and emotionally perceptive. She's drawn to artistry and beauty, but behind her flair for drama lies a quiet vulnerability. Connection matters more than applause—though she often hides that truth behind charm. Her strength emerges not through performance, but through the moments she lets her guard down."
+    personality: "Romantic, expressive, and emotionally perceptive. She's drawn to artistry and beauty, but behind her flair for drama lies a quiet vulnerability. Connection matters more than applause—though she often hides that truth behind charm. Her strength emerges not through performance, but through the moments she lets her guard down.",
+    song: {
+      tagline: "Her song, her voice, her band.",
+      title: "One More Night",
+      audioFile: "/audio/One More Night V3 - MST.m4a"
+    }
   },
   {
     name: "Noodle",
@@ -100,7 +110,12 @@ const characters = [
     form: "Fettuccine noodle (Italian-American male)",
     accent: "New York",
     skills: "Slaps surfaces like piano keys; expert at turning objects into rhythmic instruments.",
-    personality: "Fast-talking, quick-witted, brimming with kinetic charm and energy. Humor is his shield. Rhythm is his language—his soul lives in the groove. Beneath the wisecracks hides a softer, poetic core. Chaos is his comfort zone."
+    personality: "Fast-talking, quick-witted, brimming with kinetic charm and energy. Humor is his shield. Rhythm is his language—his soul lives in the groove. Beneath the wisecracks hides a softer, poetic core. Chaos is his comfort zone.",
+    song: {
+      tagline: "His song, his voice, his band.",
+      title: "Can You Feel It",
+      audioFile: "/audio/Aldente LIVE V1 (PreMST 1).m4a"
+    }
   },
   {
     name: "Ink",
@@ -116,7 +131,12 @@ const characters = [
     form: "Black ink (African-American male)",
     accent: "American",
     skills: "Mimics brass instruments with his mouth; fluid in form and sound.",
-    personality: "Bold. Adaptable. Identity-fluid. Craves connection but wrestles with self-definition. Magnetic yet introspective. Often the loudest voice—yet emotionally the hardest to pin down. His ever-shifting shape mirrors the tension between brilliance and uncertainty."
+    personality: "Bold. Adaptable. Identity-fluid. Craves connection but wrestles with self-definition. Magnetic yet introspective. Often the loudest voice—yet emotionally the hardest to pin down. His ever-shifting shape mirrors the tension between brilliance and uncertainty.",
+    song: {
+      tagline: "His song, his voice, his band.",
+      title: "Reflection",
+      audioFile: "/audio/REFLECTION 2026 PREMST.m4a"
+    }
   },
   {
     name: "Ndee",
@@ -150,7 +170,12 @@ const characters = [
     form: "Wooden stick (Black Caribbean male)",
     accent: "Jamaican",
     skills: "Taps boxes and surfaces to create drum rhythms; master of percussive steadiness.",
-    personality: "Easygoing, yet grounded in principle. Brings rhythm, calm, and perspective to tense moments. Feels life through pulse and breath. Carries deep joy and quiet sorrow—both held with grace. Speaks rarely, but his presence always resonates."
+    personality: "Easygoing, yet grounded in principle. Brings rhythm, calm, and perspective to tense moments. Feels life through pulse and breath. Carries deep joy and quiet sorrow—both held with grace. Speaks rarely, but his presence always resonates.",
+    song: {
+      tagline: "His song, his voice, his band.",
+      title: "No More Waiting",
+      audioFile: "/audio/No More Waiting - V6 MST.m4a"
+    }
   },
   {
     name: "Ikra",
@@ -342,6 +367,16 @@ function App() {
                 <p><strong>Skills:</strong> {character.skills}</p>
               </div>
               <p className="character-personality">{character.personality}</p>
+              {character.song && (
+                <div className="character-song">
+                  <p className="song-tagline">{character.song.tagline}</p>
+                  <p className="song-title">"{character.song.title}"</p>
+                  <audio controls className="song-player">
+                    <source src={character.song.audioFile} type="audio/mp4" />
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              )}
               {character.extraImages.length > 0 && (
                 <div className="character-extra-images">
                   {character.extraImages.map((img, imgIndex) => (
