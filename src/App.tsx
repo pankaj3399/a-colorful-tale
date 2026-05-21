@@ -39,10 +39,10 @@ const characters = [
     mainImage: "/images/ZHU_MOVIE_POSTER__THE_CORRECT_ONE__-f2da3672-0848-4952-a185-1f891791fd1c.png",
     extraImages: [
       "/images/ZHU_COLORED_PENCIL___1-c4da2d1a-5c6a-4ccc-b43e-5b95638620b3.png",
+      "/images/ZHU_CHARCOAL_SKETCH___1_-5d2196f3-e2b9-4a1d-a012-14e5206c89dc.png",
       "/images/ZHU_COLORED_PENCIL___2_-e77779ed-8d32-42f3-bead-3d3002c23fc7.png",
       "/images/ZHU_CHARCOAL_SKETCH___2-9aa83d6a-41b4-48f7-8c4a-3bebfc7291ae.png",
       "/images/ZHU_CHARCOAL_SKETCHES___4_-994e2aa1-b85f-4c8a-be7a-fc42f028d20d.png",
-      "/images/ZHU_CHARCOAL_SKETCH___1_-5d2196f3-e2b9-4a1d-a012-14e5206c89dc.png",
       "/images/ZHU_CHARCOAL_SKETCH___3_-b765f38d-d808-4e13-8e9b-ac5418162af2.png",
       "/images/ZHU_CHARCOAL_SKETCH___5-5f16e60d-219f-498d-88ec-dd53563992de.png"
     ],
@@ -99,12 +99,12 @@ const characters = [
     name: "Noodle",
     mainImage: "/images/NOODLE_IN_MOTION_MOVIE_POSTER-cd635b0d-f504-4073-960c-230dd9f335cb.png",
     extraImages: [
-      "/images/NOODLE_CHARCOAL_HERO_CORRECT_SHOT_-81ab57e4-7da3-42d3-9f83-c9423b3b4216.png",
       "/images/NOODLE_CHARCOAL___1-c00d3088-288d-442d-adc1-867fe19e3ef0.png",
-      "/images/NOODLE_CHARCOAL_SKETCHES_COLLAGE___1_-a3d62650-c106-41c4-8736-c6a6c45b4500.png",
-      "/images/NOODLE_CHARCOAL_SKETCHES_--_THE_ITALIAN_IN_HIM-9ce781a6-6039-4806-a0a7-e4335701defd.png",
+      "/images/NOODLE_CHARCOAL_HERO_CORRECT_SHOT_-81ab57e4-7da3-42d3-9f83-c9423b3b4216.png",
       "/images/NOODLE_CHARCOAL_SKETCH_COLLAGE___2-571658ea-89fb-4d91-a4b5-c687ad4945fa.png",
-      "/images/NOODLE_CHARCOAL_SKETHES_COLLAGE___2_-c6f14e38-23bd-4d84-8e39-4550fc39dfd7.png"
+      "/images/NOODLE_CHARCOAL_SKETHES_COLLAGE___2_-c6f14e38-23bd-4d84-8e39-4550fc39dfd7.png",
+      "/images/NOODLE_CHARCOAL_SKETCHES_COLLAGE___1_-a3d62650-c106-41c4-8736-c6a6c45b4500.png",
+      "/images/NOODLE_CHARCOAL_SKETCHES_--_THE_ITALIAN_IN_HIM-9ce781a6-6039-4806-a0a7-e4335701defd.png"
     ],
     form: "Fettuccine noodle (Italian-American male)",
     accent: "New York",
@@ -144,10 +144,10 @@ const characters = [
       "/images/NDEE__CHARCOAL_SKETCH_POSTER_POSE-825d5f1c-5b14-4c5e-81f7-1c9cf8b682c1.png",
       "/images/NDEE__THE_PERFECT_CHARCOAL_HERO_SHOT-edec7c33-5d77-4496-8b0b-774323d813d5.png",
       "/images/NDEE_CLEANEST_CHARCOAL_SKETCH-afe56812-b335-4ff7-a209-40543f8da44c.png",
+      "/images/NDEE_ROUGH_CHARCOAL_SKETCH___4_-0428a05e-5203-4dec-b105-30541a539ac0.png",
       "/images/NDEE_ROUGH_CHARCOAL_SKETCH___1-b14bc53f-f28d-4a06-ad36-04201eed37a7.png",
       "/images/NDEE_ROUGH_CHARCOAL_SKETCH___2_-794710b0-c02b-43a1-9cd1-b168ab74db28.png",
-      "/images/NDEE_ROUGH_CHARCOAL_SKETCH___3_-b3f1b42e-d615-4c0a-8302-bcc091701bdb.png",
-      "/images/NDEE_ROUGH_CHARCOAL_SKETCH___4_-0428a05e-5203-4dec-b105-30541a539ac0.png"
+      "/images/NDEE_ROUGH_CHARCOAL_SKETCH___3_-b3f1b42e-d615-4c0a-8302-bcc091701bdb.png"
     ],
     form: "Pebble (Native American male)",
     accent: "American",
