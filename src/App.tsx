@@ -42,8 +42,8 @@ const characters = [
       "/images/ZHU_CHARCOAL_SKETCH___1_-5d2196f3-e2b9-4a1d-a012-14e5206c89dc.png",
       "/images/ZHU_COLORED_PENCIL___2_-e77779ed-8d32-42f3-bead-3d3002c23fc7.png",
       "/images/ZHU_CHARCOAL_SKETCH___2-9aa83d6a-41b4-48f7-8c4a-3bebfc7291ae.png",
-      "/images/ZHU_CHARCOAL_SKETCHES___4_-994e2aa1-b85f-4c8a-be7a-fc42f028d20d.png",
       "/images/ZHU_CHARCOAL_SKETCH___3_-b765f38d-d808-4e13-8e9b-ac5418162af2.png",
+      "/images/ZHU_CHARCOAL_SKETCHES___4_-994e2aa1-b85f-4c8a-be7a-fc42f028d20d.png",
       "/images/ZHU_CHARCOAL_SKETCH___5-5f16e60d-219f-498d-88ec-dd53563992de.png"
     ],
     form: "Yellow bamboo stalk (Female, Chinese martial artist)",
@@ -101,10 +101,10 @@ const characters = [
     extraImages: [
       "/images/NOODLE_CHARCOAL___1-c00d3088-288d-442d-adc1-867fe19e3ef0.png",
       "/images/NOODLE_CHARCOAL_HERO_CORRECT_SHOT_-81ab57e4-7da3-42d3-9f83-c9423b3b4216.png",
-      "/images/NOODLE_CHARCOAL_SKETCH_COLLAGE___2-571658ea-89fb-4d91-a4b5-c687ad4945fa.png",
-      "/images/NOODLE_CHARCOAL_SKETHES_COLLAGE___2_-c6f14e38-23bd-4d84-8e39-4550fc39dfd7.png",
       "/images/NOODLE_CHARCOAL_SKETCHES_COLLAGE___1_-a3d62650-c106-41c4-8736-c6a6c45b4500.png",
-      "/images/NOODLE_CHARCOAL_SKETCHES_--_THE_ITALIAN_IN_HIM-9ce781a6-6039-4806-a0a7-e4335701defd.png"
+      "/images/NOODLE_CHARCOAL_SKETCHES_--_THE_ITALIAN_IN_HIM-9ce781a6-6039-4806-a0a7-e4335701defd.png",
+      "/images/NOODLE_CHARCOAL_SKETCH_COLLAGE___2-571658ea-89fb-4d91-a4b5-c687ad4945fa.png",
+      "/images/NOODLE_CHARCOAL_SKETHES_COLLAGE___2_-c6f14e38-23bd-4d84-8e39-4550fc39dfd7.png"
     ],
     form: "Fettuccine noodle (Italian-American male)",
     accent: "New York",
