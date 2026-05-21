@@ -179,7 +179,14 @@ const characters = [
   {
     name: "Ikra",
     mainImage: "/images/IKRA_MOVIE_POSTER-aa8a389c-cecb-4517-8696-dcbde756b70c.png",
-    extraImages: ["/images/IKRA-7f50ca29-5a7b-4d41-9d3f-e1023ba7f186.png"],
+    extraImages: [
+      "/images/IKRA_CHARCOAL_HERO_SHOT-943570d8-b652-4331-9fe0-412cd17c0e8a.png",
+      "/images/IKRA_CHARCOLA_SKETCH_2_POSES___2-0c291f67-424c-4cd2-89f8-3b812a66dc50.png",
+      "/images/IKRA_CHARCOAL_SKETCHES_4_POSES-01034849-d8f3-47c2-b284-425c38c52c4a.png",
+      "/images/IKRA_CHARCOAL_SKETCHES_STAGE_7__LIVE_BEHAVIORAL__-7b9b4a3a-e149-4cde-9bce-0a30e0a28194.png",
+      "/images/IKRA_SKETHES_ROUCH_PERFORMANCE_EXPLORATIONS-81747fb0-ea5b-408b-8c55-5dfaf604a4d6.png",
+      "/images/IKRA_CHARCOAL_SKETCHES_PRIMITIVE_EXPLORATIONS-37726f18-3ded-4fc8-a49a-0267b2e749fc.png"
+    ],
     form: "Red teddy bear (Russian female)",
     accent: "Russian, soft-spoken",
     skills: "Gentle vocal presence; emotionally potent singer when she opens up.",
