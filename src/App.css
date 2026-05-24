@@ -363,8 +363,8 @@
 
 .character-extra-images {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
   margin-top: 20px;
 }
 
@@ -373,10 +373,11 @@
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
+  aspect-ratio: 1 / 1;
 }
 
 .extra-image-wrapper:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -387,7 +388,8 @@
 
 .character-extra-images img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
   border-radius: 8px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
@@ -455,7 +457,7 @@
   }
 
   .character-extra-images {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
