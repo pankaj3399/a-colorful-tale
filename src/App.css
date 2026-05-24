@@ -56,8 +56,8 @@
 
 /* Summary Section */
 .summary-section {
-  background: #f8f6f1;
-  color: #2a2a2a;
+  background: #000000;
+  color: #ffffff;
   padding: 80px 20px;
 }
 
@@ -72,7 +72,7 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 1.9;
-  color: #3a3a3a;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* Trailer Section */
@@ -398,36 +398,7 @@
   opacity: 0.9;
 }
 
-/* Temporary numbered labels for client review */
-.image-label-wrapper {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
 
-.extra-image-wrapper {
-  position: relative;
-}
-
-.image-label {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: #e53935;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
-  pointer-events: none;
-}
 
 /* Responsive Characters */
 @media (max-width: 900px) {

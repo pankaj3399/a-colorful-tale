@@ -366,10 +366,7 @@ function App() {
             className={`character-block ${index % 2 === 1 ? 'reverse' : ''}`}
           >
             <div className="character-main-image">
-              <div className="image-label-wrapper">
-                <img src={character.mainImage} alt={character.name} />
-                <span className="image-label">Main</span>
-              </div>
+              <img src={character.mainImage} alt={character.name} />
             </div>
             <div className="character-info">
               <h3>{character.name}</h3>
@@ -404,7 +401,6 @@ function App() {
                         src={img} 
                         alt={`${character.name} additional ${imgIndex + 1}`} 
                       />
-                      <span className="image-label">{imgIndex + 1}</span>
                     </div>
                   ))}
                 </div>
