@@ -200,7 +200,7 @@
 
 .synopsis-lead {
   font-family: 'PT Serif Caption', serif !important;
-  font-size: 15px !important;
+  font-size: 18px !important;
   font-style: italic;
   color: #d4af37 !important;
   text-align: center;
@@ -216,7 +216,7 @@
 
 .synopsis-closing {
   font-family: 'PT Serif Caption', serif;
-  font-size: 15px !important;
+  font-size: 18px !important;
   text-align: center;
   padding-top: 30px;
   margin-top: 50px !important;
@@ -398,6 +398,37 @@
   opacity: 0.9;
 }
 
+/* Temporary numbered labels for client review */
+.image-label-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.extra-image-wrapper {
+  position: relative;
+}
+
+.image-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #e53935;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  pointer-events: none;
+}
+
 /* Responsive Characters */
 @media (max-width: 900px) {
   .character-block,
@@ -450,7 +481,7 @@
 
 .world-intro p {
   font-family: 'PT Serif Caption', serif;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.8);
 }
