@@ -485,8 +485,8 @@
 
 /* Footer */
 .movie-footer {
-  background: #050505;
-  padding: 60px 20px;
+  background: linear-gradient(180deg, #0a0a0a 0%, #050505 100%);
+  padding: 70px 20px 50px;
   text-align: center;
   border-top: 1px solid rgba(212, 175, 55, 0.2);
 }
@@ -495,15 +495,105 @@
   font-family: 'Cinzel', serif;
   font-size: 1.2rem;
   color: #d4af37;
-  margin: 0 0 15px;
+  margin: 0 0 45px;
   letter-spacing: 0.1em;
+}
+
+.contact-us {
+  max-width: 480px;
+  margin: 0 auto 45px;
+}
+
+.contact-card {
+  padding: 36px 32px 32px;
+  background: rgba(212, 175, 55, 0.04);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 12px;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(212, 175, 55, 0.08);
+  position: relative;
+}
+
+.contact-card::before,
+.contact-card::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+}
+
+.contact-card::before {
+  top: 0;
+}
+
+.contact-card::after {
+  bottom: 0;
+}
+
+.contact-eyebrow {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 8px;
+}
+
+.contact-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.1rem, 3vw, 1.35rem);
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0 0 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #d4af37;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  background: rgba(212, 175, 55, 0.08);
+  transition: color 0.25s, background 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.contact-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.contact-email:hover {
+  color: #0a0a0a;
+  background: #d4af37;
+  border-color: #d4af37;
+  box-shadow: 0 0 24px rgba(212, 175, 55, 0.35);
+  transform: translateY(-1px);
+}
+
+.contact-email:hover .contact-icon {
+  opacity: 1;
 }
 
 .copyright {
   font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.45);
   margin: 0;
+  letter-spacing: 0.04em;
 }
 
 /* Image Lightbox/Modal */
@@ -605,6 +695,19 @@
 
   .world-intro h3 {
     letter-spacing: 0.02em;
+  }
+
+  .contact-card {
+    padding: 28px 20px 24px;
+  }
+
+  .contact-title {
+    letter-spacing: 0.12em;
+  }
+
+  .contact-email {
+    font-size: 0.88rem;
+    padding: 11px 18px;
   }
 }
 
