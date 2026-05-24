@@ -41,9 +41,9 @@ const characters = [
       "/images/ZHU_COLORED_PENCIL___1-c4da2d1a-5c6a-4ccc-b43e-5b95638620b3.png",
       "/images/ZHU_CHARCOAL_SKETCH___1_-5d2196f3-e2b9-4a1d-a012-14e5206c89dc.png",
       "/images/ZHU_COLORED_PENCIL___2_-e77779ed-8d32-42f3-bead-3d3002c23fc7.png",
-      "/images/ZHU_CHARCOAL_SKETCH___4-ac41ba32-8fa3-4b56-9fd9-fcdd1eae61d8.png",
       "/images/ZHU_CHARCOAL_SKETCH___2-9aa83d6a-41b4-48f7-8c4a-3bebfc7291ae.png",
       "/images/ZHU_CHARCOAL_SKETCH___3_-b765f38d-d808-4e13-8e9b-ac5418162af2.png",
+      "/images/ZHU_CHARCOAL_SKETCH___4-ac41ba32-8fa3-4b56-9fd9-fcdd1eae61d8.png",
       "/images/ZHU_CHARCOAL_SKETCHES___4_-994e2aa1-b85f-4c8a-be7a-fc42f028d20d.png",
       "/images/ZHU_CHARCOAL_SKETCH___5-5f16e60d-219f-498d-88ec-dd53563992de.png"
     ],
@@ -59,10 +59,10 @@ const characters = [
       "/images/ROYAL_B._COLORED_CHARCOAL___1__CORRECT_VERSION__-223f77d7-c970-4cf3-b6f1-0179eef573c2.png",
       "/images/ROYAL_B._CHARCOAL___1_-ea6496ee-4a14-4ede-a07a-7235f5800e87.png",
       "/images/ROYAL_B._COLORED_PENCIL_COLLAGE-104be3f8-5ef4-4da6-9361-dd6c3a5eeb00.png",
-      "/images/ROYAL_B._CHARCOAL_SKETCH_COLLAGE___3_-61210a51-53e7-4bf0-985f-0864dd2529af.png",
       "/images/ROYAL_B._CHARCOAL_SKETCH_COLLAGE_-aa64c5f0-5dd4-45b6-a215-8a1a843d9012.png",
       "/images/ROYAL_B._CHARCOAL_SKETCH_COLLAGE___1_-31710163-1065-42a0-aedc-dac56f9f1888.png",
-      "/images/ROYAL_B._CHARCOAL_SKETCH_COLLAGE___2_-9a52429c-ae59-4ffe-8d4a-ab676904eedd.png"
+      "/images/ROYAL_B._CHARCOAL_SKETCH_COLLAGE___2_-9a52429c-ae59-4ffe-8d4a-ab676904eedd.png",
+      "/images/ROYAL_B._CHARCOAL_SKETCH_COLLAGE___3_-61210a51-53e7-4bf0-985f-0864dd2529af.png"
     ],
     form: "British Royal Toy Guard (Caucasian male)",
     accent: "British",
@@ -81,10 +81,10 @@ const characters = [
       "/images/CLOVER_THE_THIRD_COLORED_PENCIL_-1bbb5262-1969-47bc-b277-7034e16050f0.png",
       "/images/CLOVER_THE_THIRD_CHARCOAL_SKETCH_-55575633-2e0f-4691-b497-ae58e8fe112b.png",
       "/images/CLOVER_THE_THIRD_CHARCOAL_SKETCH___2_-3006e83c-7085-4145-8361-978bde93ea80.png",
-      "/images/CLOVER_THE_THIRD_CHARCOAL_TRANSFORMATION__CORRECT_1__-10f8c680-857f-4327-8cbb-c98e5858cf2c.png",
       "/images/CLOVER_THE_THIRD_CHARCOAL_SKETCH___3_-5afbf527-3210-4bd2-a872-846a027baca0.png",
       "/images/CLOVER_THE_THIRD_CHARCOAL_SKETCH_COLLAGE___1_-4bee0a7d-559d-492d-8267-b2b04c18c967.png",
-      "/images/CLOVER_THE_THIRD_CHARCOAL_SKETCH_COLLAGE___2_-f025e589-8969-48ac-8e5a-e76092191560.png"
+      "/images/CLOVER_THE_THIRD_CHARCOAL_SKETCH_COLLAGE___2_-f025e589-8969-48ac-8e5a-e76092191560.png",
+      "/images/CLOVER_THE_THIRD_CHARCOAL_TRANSFORMATION__CORRECT_1__-10f8c680-857f-4327-8cbb-c98e5858cf2c.png"
     ],
     form: "Grass blade turned shamrock (Irish female)",
     accent: "Irish",
@@ -160,10 +160,10 @@ const characters = [
     mainImage: "/images/NEW_UPDATED_RASTA_OFFICIAL_POSTER-22b99aba-0d21-4c9e-861b-e9b9bf5050ea.png",
     extraImages: [
       "/images/RASTA_CHARCOAL_OFFICIAL_HERO_SHOT-a563d715-39c3-441c-a4d0-a7fc571ccf98.png",
-      "/images/RASTA_CHARCOAL_ROUGH_EXPLORATION___1-e9595578-7c02-4c81-a2fd-6a0e1457b249.png",
       "/images/RASTA_CHARCOAL_2_POSES_OFFICIAL_PIX_-2d5aefb9-c619-4f13-9038-130e52b5ce3f.png",
       "/images/RASTA_CHARCOAL_4_POSES_-8562eb0b-34fa-46ff-bc53-d9ffda0d1df2.png",
       "/images/RASTA_CHARCOAL_8_POSES-6a4cbeab-1ee7-459f-9db7-2bdfabf923a1.png",
+      "/images/RASTA_CHARCOAL_ROUGH_EXPLORATION___1-e9595578-7c02-4c81-a2fd-6a0e1457b249.png",
       "/images/RASTA_CHARCOAL_SKETCHES___5_-8728431c-6d64-4b8d-8ddf-54ab279a3e58.png",
       "/images/RASTA_CHARCOAL_SKETCHES___6_-86f3753c-add8-4b52-b3f5-0fbca6be6b8a.png"
     ],
@@ -182,10 +182,10 @@ const characters = [
     mainImage: "/images/IKRA_MOVIE_POSTER-aa8a389c-cecb-4517-8696-dcbde756b70c.png",
     extraImages: [
       "/images/IKRA_CHARCOAL_HERO_SHOT-943570d8-b652-4331-9fe0-412cd17c0e8a.png",
-      "/images/IKRA_CHARCOAL_SKETCHES_PRIMITIVE_EXPLORATIONS-37726f18-3ded-4fc8-a49a-0267b2e749fc.png",
       "/images/IKRA_CHARCOLA_SKETCH_2_POSES___2-0c291f67-424c-4cd2-89f8-3b812a66dc50.png",
       "/images/IKRA_CHARCOAL_SKETCHES_4_POSES-01034849-d8f3-47c2-b284-425c38c52c4a.png",
       "/images/IKRA_CHARCOAL_SKETCHES_STAGE_7__LIVE_BEHAVIORAL__-7b9b4a3a-e149-4cde-9bce-0a30e0a28194.png",
+      "/images/IKRA_CHARCOAL_SKETCHES_PRIMITIVE_EXPLORATIONS-37726f18-3ded-4fc8-a49a-0267b2e749fc.png",
       "/images/IKRA_SKETHES_ROUCH_PERFORMANCE_EXPLORATIONS-81747fb0-ea5b-408b-8c55-5dfaf604a4d6.png"
     ],
     form: "Red teddy bear (Russian female)",
@@ -198,12 +198,12 @@ const characters = [
     mainImage: "/images/THWRT_OFFICIAL_MOVIE_POSTER-4e7c8fa8-96fd-4719-a314-1d375c9895b7.png",
     extraImages: [
       "/images/THRWT_NEW_MOUND_CHARCOAL_SKETCH_-56762594-9fa1-452e-89c4-4519fd82570c.png",
-      "/images/THRWT_CHARCOAL_SKETCHES_COLLAGE___5-061f75de-460b-4fdd-9797-1f35e24143fe.png",
       "/images/THWRT_PURPLE_CHARCOAL___1_-2ebc605a-3e45-4973-a2cd-e1e340923f3c.png",
       "/images/THWRT_CHARCOAL_SKETCH___2_-51ef7987-6195-44e1-8203-ed1420a40b53.png",
       "/images/THWRT_CHARCOAL_SKETCH___3_-e40041d4-f699-43d7-b41f-fed3d3e6577c.png",
-      "/images/THRWT_CHARCOAL_SKETCHES_COLLAGE___2_-11149654-d77a-462b-9040-0501cc366c7a.png",
-      "/images/THRWT_CHARCOAL_SKETCHES_COLLAGE___4_-a720e383-f15d-4b59-8204-212e3aac36ce.png"
+      "/images/THRWT_CHARCOAL_SKETCHES_COLLAGE___5-061f75de-460b-4fdd-9797-1f35e24143fe.png",
+      "/images/THRWT_CHARCOAL_SKETCHES_COLLAGE___4_-a720e383-f15d-4b59-8204-212e3aac36ce.png",
+      "/images/THRWT_CHARCOAL_SKETCHES_COLLAGE___2_-11149654-d77a-462b-9040-0501cc366c7a.png"
     ],
     form: "Being of living sand. Each grain is an eye. (Arabic male, shapeshifter)",
     accent: "Arabic",
