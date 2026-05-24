@@ -257,8 +257,11 @@ function App() {
             />
           </div>
           <p className="logline">
-            When a grieving boy shuts the world out, forgotten keepsakes find their
-            voice through chaotic harmony—to help him feel again.
+            When a grieving boy shuts the world out,
+            <br />
+            forgotten keepsakes find their voice through chaotic
+            <br />
+            harmony—to help him feel again.
           </p>
         </div>
       </section>
