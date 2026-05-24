@@ -45,7 +45,7 @@
 
 .logline {
   font-family: 'PT Serif Caption', serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   font-style: italic;
   color: rgba(255, 255, 255, 0.85);
@@ -69,7 +69,8 @@
 
 .summary-content p {
   font-family: 'PT Serif Caption', serif;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 700;
   line-height: 1.9;
   color: #3a3a3a;
 }
@@ -198,7 +199,7 @@
 }
 
 .synopsis-lead {
-  font-family: 'PT Serif Caption', serif;
+  font-family: 'PT Serif Caption', serif !important;
   font-size: 15px !important;
   font-style: italic;
   color: #d4af37 !important;
