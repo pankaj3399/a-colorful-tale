@@ -45,7 +45,7 @@
 
 .logline {
   font-family: 'PT Serif Caption', serif;
-  font-size: clamp(1.15rem, 3vw, 1.5rem);
+  font-size: clamp(1rem, 2.6vw, 1.3rem);
   font-weight: 700;
   font-style: italic;
   color: #ffffff;
