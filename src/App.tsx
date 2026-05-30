@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import './App.css'
+import Chatbot from './Chatbot'
 
 const characters = [
   {
@@ -478,6 +479,8 @@ function App() {
         </div>
         <p className="copyright">© 2026 A Colorful Tale</p>
       </footer>
+
+      <Chatbot />
     </div>
   )
 }
