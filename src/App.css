@@ -483,6 +483,52 @@
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
 }
 
+.project-package {
+  max-width: 760px;
+  margin: 80px auto 0;
+  text-align: center;
+}
+
+.project-package-eyebrow {
+  display: block;
+  font-family: 'Cinzel', serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #d4af37;
+  margin-bottom: 22px;
+}
+
+.project-package-desc {
+  font-family: 'PT Serif Caption', serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto 40px;
+}
+
+.project-package-link {
+  display: inline-block;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 16px 42px;
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  border-radius: 4px;
+  background: rgba(212, 175, 55, 0.04);
+  transition: color 0.3s, border-color 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+.project-package-link:hover {
+  color: #0a0a0a;
+  background: #d4af37;
+  border-color: #d4af37;
+  box-shadow: 0 0 28px rgba(212, 175, 55, 0.45);
+}
+
 /* Footer */
 .movie-footer {
   background: linear-gradient(180deg, #0a0a0a 0%, #050505 100%);
@@ -695,6 +741,21 @@
 
   .world-intro h3 {
     letter-spacing: 0.02em;
+  }
+
+  .project-package {
+    margin-top: 55px;
+  }
+
+  .project-package-eyebrow {
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+  }
+
+  .project-package-link {
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    padding: 14px 30px;
   }
 
   .contact-card {

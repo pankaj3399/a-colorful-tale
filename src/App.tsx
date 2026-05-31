@@ -441,6 +441,21 @@ function App() {
             </div>
           ))}
         </div>
+        <div className="project-package">
+          <span className="project-package-eyebrow">For Producers, Investors &amp; Industry Professionals</span>
+          <p className="project-package-desc">
+            Explore the complete development package behind A Colorful Tale, including the
+            pitch deck, comparable films, target audience, marketing strategy, and franchise potential.
+          </p>
+          <a
+            href="/pitch-deck.pdf"
+            className="project-package-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project Package
+          </a>
+        </div>
       </section>
 
       {/* Image Lightbox */}
