@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { CheckCheck, Clock, RotateCcw, Send, X } from 'lucide-react';
-import avatarImage from './assets/avatar.jpeg';
+import avatarImage from './assets/bot-avatar.jpeg';
 import './Chatbot.css';
 
 const CONVERSATION_API_BASE =
