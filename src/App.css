@@ -484,19 +484,31 @@
 }
 
 .project-package {
-  max-width: 760px;
+  position: relative;
+  max-width: 940px;
   margin: 80px auto 0;
+  padding-top: 70px;
   text-align: center;
+}
+
+.project-package::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  transform: translateX(-50%);
 }
 
 .project-package-eyebrow {
   display: block;
   font-family: 'Cinzel', serif;
-  font-size: 0.95rem;
-  letter-spacing: 0.18em;
+  font-size: 1.55rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #d4af37;
-  margin-bottom: 22px;
+  margin-bottom: 26px;
 }
 
 .project-package-desc {
@@ -504,6 +516,7 @@
   font-size: 18px;
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.8);
+  max-width: 900px;
   margin: 0 auto 40px;
 }
 
@@ -636,8 +649,8 @@
 
 .copyright {
   font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.45);
+  font-size: 1.12rem;
+  color: #ffffff;
   margin: 0;
   letter-spacing: 0.04em;
 }
@@ -745,11 +758,16 @@
 
   .project-package {
     margin-top: 55px;
+    padding-top: 50px;
   }
 
   .project-package-eyebrow {
-    font-size: 0.82rem;
-    letter-spacing: 0.12em;
+    font-size: 1.12rem;
+    letter-spacing: 0.1em;
+  }
+
+  .project-package-desc {
+    font-size: 16px;
   }
 
   .project-package-link {
