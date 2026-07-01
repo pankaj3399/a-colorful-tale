@@ -161,6 +161,7 @@ export interface InstagramMessage {
 
 export interface InstagramConversation {
   id: string;
+  _id?: string;
   igUsername: string | null;
   igUserId: string | null;
   status: string | null;

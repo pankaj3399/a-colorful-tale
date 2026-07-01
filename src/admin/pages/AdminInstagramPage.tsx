@@ -234,10 +234,12 @@ export default function AdminInstagramPage() {
                     </td>
                   </tr>
                 ) : (
-                  list.rows.map((row) => (
+                  list.rows.map((row) => {
+                    const conversationId = row._id ?? row.id;
+                    return (
                     <tr
-                      key={row.id}
-                      onClick={() => openConversation(row.id)}
+                      key={conversationId}
+                      onClick={() => openConversation(conversationId)}
                       className="cursor-pointer border-t transition-colors hover:bg-white/[0.03]"
                       style={{ borderColor: 'rgba(255,255,255,0.04)' }}
                     >
@@ -248,7 +250,8 @@ export default function AdminInstagramPage() {
                       <td className="px-5 py-3.5 text-slate-500">{row.messageCount ?? row.messages?.length ?? 0}</td>
                       <td className="px-5 py-3.5 text-slate-500">{formatDate(row.lastMessageAt ?? row.updatedAt ?? row.createdAt)}</td>
                     </tr>
-                  ))
+                    );
+                  })
                 )}
               </tbody>
             </table>
