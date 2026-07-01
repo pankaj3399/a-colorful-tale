@@ -219,7 +219,7 @@ export default function AdminMetaSettingsPage() {
                 <button
                   type="button"
                   onClick={handleTest}
-                  disabled={isTesting || !connected}
+                  disabled={isTesting}
                   className="flex items-center gap-2 rounded-xl border px-4 py-2.5 text-[13px] font-medium text-slate-300 transition-colors hover:bg-white/5 disabled:cursor-not-allowed disabled:opacity-50"
                   style={{ borderColor: 'rgba(255,255,255,0.08)' }}
                 >
