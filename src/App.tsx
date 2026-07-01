@@ -492,7 +492,9 @@ function App() {
             </a>
           </div>
         </div>
-        <p className="copyright">© 2026 A Colorful Tale</p>
+        <p className="copyright">
+          © 2026 A Colorful Tale · <a href="/privacy" className="footer-privacy-link">Privacy Policy</a>
+        </p>
       </footer>
 
       <Chatbot />

@@ -1,0 +1,156 @@
+.privacy-page {
+  min-height: 100vh;
+  background: #000000;
+  color: #d4d4d4;
+}
+
+.privacy-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(12px);
+}
+
+.privacy-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .privacy-header-inner {
+    padding: 1rem 1.5rem;
+  }
+}
+
+.privacy-brand {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.privacy-back-link {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: rgba(253, 230, 138, 0.9);
+  transition: color 0.2s ease;
+}
+
+.privacy-back-link:hover {
+  color: #fef3c7;
+}
+
+.privacy-main {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 5rem;
+}
+
+@media (min-width: 640px) {
+  .privacy-main {
+    padding: 2.5rem 1.5rem 5rem;
+  }
+}
+
+.privacy-title {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: clamp(1.875rem, 4vw, 2.25rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.privacy-updated {
+  margin-top: 0.75rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: #a3a3a3;
+}
+
+.privacy-intro {
+  margin-top: 1.5rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #d4d4d4;
+}
+
+.privacy-section {
+  scroll-margin-top: 6rem;
+}
+
+.privacy-section-title {
+  margin-top: 3rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.privacy-section:first-of-type .privacy-section-title {
+  margin-top: 0;
+}
+
+.privacy-section-body {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #d4d4d4;
+}
+
+.privacy-section-body p {
+  margin: 0;
+}
+
+.privacy-emphasis {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.privacy-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.privacy-list li::marker {
+  color: #737373;
+}
+
+.privacy-link {
+  color: rgba(253, 230, 138, 0.9);
+  text-decoration: underline;
+  text-decoration-color: rgba(253, 230, 138, 0.3);
+  text-underline-offset: 4px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.privacy-link:hover {
+  color: #fef3c7;
+  text-decoration-color: rgba(254, 243, 199, 0.6);
+}
+
+.privacy-disclaimer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: #737373;
+}
