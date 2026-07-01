@@ -234,21 +234,27 @@ export default function AdminInstagramPage() {
                     </td>
                   </tr>
                 ) : (
-                  list.rows.map((row) => (
+                  list.rows.map((row) => {
+                    const conversationId = row._id ?? row.id;
+                    const username = row.username ?? row.igUsername ?? row.instagramUserId ?? row.igUserId;
+                    const email = row.capturedData?.email ?? row.email;
+                    const phone = row.capturedData?.phone ?? row.phone;
+                    return (
                     <tr
-                      key={row.id}
-                      onClick={() => openConversation(row.id)}
+                      key={conversationId}
+                      onClick={() => openConversation(conversationId)}
                       className="cursor-pointer border-t transition-colors hover:bg-white/[0.03]"
                       style={{ borderColor: 'rgba(255,255,255,0.04)' }}
                     >
-                      <td className="px-5 py-3.5 font-medium text-slate-200">@{row.igUsername ?? '—'}</td>
+                      <td className="px-5 py-3.5 font-medium text-slate-200">@{username ?? '—'}</td>
                       <td className="px-5 py-3.5 text-slate-400">{row.status ?? '—'}</td>
-                      <td className="px-5 py-3.5 text-slate-400">{row.email ?? '—'}</td>
-                      <td className="px-5 py-3.5 text-slate-400">{row.phone ?? '—'}</td>
+                      <td className="px-5 py-3.5 text-slate-400">{email ?? '—'}</td>
+                      <td className="px-5 py-3.5 text-slate-400">{phone ?? '—'}</td>
                       <td className="px-5 py-3.5 text-slate-500">{row.messageCount ?? row.messages?.length ?? 0}</td>
                       <td className="px-5 py-3.5 text-slate-500">{formatDate(row.lastMessageAt ?? row.updatedAt ?? row.createdAt)}</td>
                     </tr>
-                  ))
+                    );
+                  })
                 )}
               </tbody>
             </table>
@@ -293,7 +299,7 @@ export default function AdminInstagramPage() {
           >
             <div className="flex items-center justify-between border-b px-5 py-4" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
               <h2 className="text-sm font-semibold text-white">
-                {selected ? `@${selected.igUsername ?? 'conversation'}` : 'Loading…'}
+                {selected ? `@${selected.username ?? selected.igUsername ?? selected.instagramUserId ?? selected.igUserId ?? 'conversation'}` : 'Loading…'}
               </h2>
               <button
                 onClick={() => setSelected(null)}
@@ -315,8 +321,8 @@ export default function AdminInstagramPage() {
                   <dl className="mb-5 grid grid-cols-2 gap-3 text-[13px]">
                     <div><dt className="text-slate-600">Status</dt><dd className="text-slate-300">{selected.status ?? '—'}</dd></div>
                     <div><dt className="text-slate-600">Created</dt><dd className="text-slate-300">{formatDate(selected.createdAt)}</dd></div>
-                    <div><dt className="text-slate-600">Email</dt><dd className="text-slate-300">{selected.email ?? '—'}</dd></div>
-                    <div><dt className="text-slate-600">Phone</dt><dd className="text-slate-300">{selected.phone ?? '—'}</dd></div>
+                    <div><dt className="text-slate-600">Email</dt><dd className="text-slate-300">{selected.capturedData?.email ?? selected.email ?? '—'}</dd></div>
+                    <div><dt className="text-slate-600">Phone</dt><dd className="text-slate-300">{selected.capturedData?.phone ?? selected.phone ?? '—'}</dd></div>
                   </dl>
 
                   <p className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-slate-600">Messages</p>

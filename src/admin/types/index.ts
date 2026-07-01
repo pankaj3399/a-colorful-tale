@@ -161,12 +161,21 @@ export interface InstagramMessage {
 
 export interface InstagramConversation {
   id: string;
-  igUsername: string | null;
-  igUserId: string | null;
+  _id?: string;
+  /** Resolved from the Graph API on the next incoming message; falls back to instagramUserId. */
+  username?: string | null;
+  instagramUserId?: string | null;
+  igUsername?: string | null;
+  igUserId?: string | null;
   status: string | null;
-  email: string | null;
-  phone: string | null;
+  capturedData?: {
+    email?: string | null;
+    phone?: string | null;
+  } | null;
+  email?: string | null;
+  phone?: string | null;
   messages?: InstagramMessage[];
+  /** Computed via $size in aggregation; the full messages array is not shipped for the list. */
   messageCount?: number;
   lastMessageAt?: string | null;
   createdAt: string;
